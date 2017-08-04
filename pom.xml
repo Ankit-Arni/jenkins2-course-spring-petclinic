@@ -285,12 +285,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.0</version>
+                <version>3.6.2</version>
                 <configuration>
                     <compilerArguments>
                         <Xlint/>
                     </compilerArguments>
                     <verbose>true</verbose>
+                    <fork>true</fork>
+                    <executable>${JAVA_HOME}/bin/javac</executable>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <showWarnings>true</showWarnings>
